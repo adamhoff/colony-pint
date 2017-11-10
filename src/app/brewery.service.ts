@@ -30,4 +30,8 @@ export class BreweryService {
   getBrewery(id: string) {
     return this.http.get<BreweryResponse>(this.breweriesUrl + `brewery/${id}/?key=` + this.key2);
   }
+
+  getBeer(id: string) {
+    return this.http.get<BreweryResponse>(this.breweriesUrl + `brewery/${id}/beers/?key=` + this.key2);
+  }
 }

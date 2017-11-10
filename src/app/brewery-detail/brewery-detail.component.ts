@@ -14,7 +14,7 @@ import { BreweryService }  from '../brewery.service';
 export class BreweryDetailComponent implements OnInit {
 
   brewery: any[];
-
+  beers: any[];
 
   constructor(
     private route: ActivatedRoute,
@@ -30,6 +30,12 @@ export class BreweryDetailComponent implements OnInit {
     const id = this.route.snapshot.paramMap.get('breweryId');
     this.breweryService.getBrewery(id)
       .subscribe(brewery => this.brewery = brewery.data);
+  }
+
+  getBeer(): void {
+    const id = this.route.snapshot.paramMap.get('breweryId');
+    this.breweryService.getBeer(id)
+      .subscribe(beers => this.beers = beers.data);
   }
 
   goBack(): void {

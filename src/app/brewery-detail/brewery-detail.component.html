@@ -2,4 +2,8 @@
   <button (click)="goBack()">go back</button>
   <h2>{{ brewery.name }} </h2>
   <div><span>id: </span>{{brewery.id}}</div>
+  <button (click)="getBeer()">Show Beer</button>
+  <div *ngFor="let beer of beers">
+    <h3>{{beer.name}}</h3>
+  </div>
 </div>
