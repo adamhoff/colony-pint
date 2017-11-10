@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 
@@ -13,7 +13,8 @@ import { BreweryService }  from '../brewery.service';
 })
 export class BreweryDetailComponent implements OnInit {
 
-  @Input() brewery: Brewery;
+  brewery: any[];
+
 
   constructor(
     private route: ActivatedRoute,
@@ -26,9 +27,9 @@ export class BreweryDetailComponent implements OnInit {
   }
 
   getBrewery(): void {
-    const id = +this.route.snapshot.paramMap.get('id');
+    const id = this.route.snapshot.paramMap.get('breweryId');
     this.breweryService.getBrewery(id)
-      .subscribe(brewery => this.brewery = brewery);
+      .subscribe(brewery => this.brewery = brewery.data);
   }
 
   goBack(): void {

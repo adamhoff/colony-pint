@@ -8,7 +8,7 @@ import { BreweryDetailComponent }  from './brewery-detail/brewery-detail.compone
 const routes: Routes = [
   { path: 'breweries', component: BreweriesComponent },
   { path: 'dashboard', component: DashboardComponent },
-  { path: 'detail/:id', component: BreweryDetailComponent },
+  { path: 'detail/:breweryId', component: BreweryDetailComponent },
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' }
 ];
 
