@@ -1,0 +1,49 @@
+/* AppComponent's private CSS styles */
+h1 {
+  font-size: 1.6em;
+  color: #999;
+  margin-bottom: 0;
+}
+h2 {
+  font-size: 2em;
+  margin-top: 0;
+  padding-top: 0;
+}
+nav {
+  display: flex;
+}
+.logo {
+  margin-right: 13.5em;
+}
+
+nav a {
+  font-size: 1.1em;
+  align-self: flex-end;
+  padding: 5px 10px 0 10px;
+  margin: 5px;
+  text-decoration: none;
+  /*border-bottom: 2px solid #e04a24;*/
+}
+
+nav a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #e04a24;
+  transition: width .3s;
+}
+
+nav a:visited, a:link {
+  color: black;
+}
+nav a:hover {
+  color: #CFD8DC;
+}
+nav a:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+nav a.active {
+  color: #039be5;
+}

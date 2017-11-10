@@ -1,0 +1,8 @@
+<h2>Breweries</h2>
+<ul class="breweries">
+  <li *ngFor="let brewery of breweries">
+    <a routerLink="/detail/{{brewery.brewery.id}}">
+      <span class="badge">{{breweries.indexOf(brewery)+1}}</span> {{brewery.brewery.name}}
+    </a>
+  </li>
+</ul>

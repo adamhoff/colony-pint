@@ -1,0 +1,10 @@
+<div *ngIf="brewery">
+  <button (click)="goBack()">go back</button>
+  <h2>{{ brewery.name | uppercase }} Details</h2>
+  <div><span>id: </span>{{brewery.id}}</div>
+  <div>
+    <label>name:
+      <input [(ngModel)]="brewery.name" placeholder="name">
+    </label>
+  </div>
+</div>

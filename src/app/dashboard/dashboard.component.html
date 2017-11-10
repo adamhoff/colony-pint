@@ -1,0 +1,11 @@
+<div class="grid grid-pad">
+  <div class="description">
+    {{description}}
+  </div>
+  <a *ngFor="let brewery of breweries" class="col-1-4"
+    routerLink="/detail/{{brewery.brewery.id}}">
+    <div class="module brewery">
+      <h4>{{brewery.brewery.name}}</h4>
+    </div>
+  </a>
+</div>
