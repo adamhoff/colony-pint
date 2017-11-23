@@ -24,6 +24,7 @@ export class BreweryDetailComponent implements OnInit {
 
   ngOnInit(): void {
     this.getBrewery();
+    this.getBeer();
   }
 
   getBrewery(): void {

@@ -2,7 +2,7 @@
 <ul class="breweries">
   <li *ngFor="let brewery of breweries">
     <a routerLink="/detail/{{brewery.brewery.id}}">
-      <span class="badge">{{breweries.indexOf(brewery)+1}}</span> {{brewery.brewery.name}}
+      <span class="badge">{{breweries.indexOf(brewery)+1}}</span> <span>{{brewery.brewery.name}}</span>
     </a>
   </li>
 </ul>

@@ -1,15 +1,9 @@
-/* HeroDetailComponent's private CSS styles */
-label {
-  display: inline-block;
-  width: 3em;
-  margin: .5em 0;
-  color: #607D8B;
-  font-weight: bold;
-}
+
 button {
   margin-top: 20px;
   font-family: Arial;
   background-color: #eee;
+  color: black;
   border: none;
   padding: 5px 10px;
   border-radius: 4px;
@@ -22,4 +16,36 @@ button:disabled {
   background-color: #eee;
   color: #ccc;
   cursor: auto;
+}
+.brew-name {
+  color: black;
+  font-weight: bold;
+}
+.beer {
+}
+.beer div {
+  display: inline-block;
+}
+.beer-name {
+  border-right: 1px solid black;
+  width: 15em;
+  color: #e04a24;
+}
+.beer-type{
+  margin-left: 5px;
+  text-align: right;
+}
+h3 {
+  margin-top: 40px;
+  margin-bottom: 5px;
+  text-decoration: underline #e04a24;
+  font-weight: bold;
+
+}
+p{
+  width: 50%;
+  text-indent: 2em;
+}
+a{
+  text-decoration: underline #e04a24;
 }
