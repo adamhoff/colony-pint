@@ -27,7 +27,19 @@ export class BreweryService {
   KEY2 = '&key=0fa7baec79a40f0c5270d7dbfcce4a52'
 
   getBreweries() {
-   return this.http.get<BreweryResponse>(this.breweriesUrl + this.region + this.KEY);
+    return this.http.get<BreweryResponse>(this.breweriesUrl + this.region + '&p=2' + this.KEY);
+  }
+  getBreweries2() {
+    return this.http.get<BreweryResponse>(this.breweriesUrl + this.region + '&p=2' + this.KEY);
+  }
+  getBreweries3() {
+    return this.http.get<BreweryResponse>(this.breweriesUrl + this.region + '&p=3' + this.KEY);
+  }
+  getBreweries4() {
+    return this.http.get<BreweryResponse>(this.breweriesUrl + this.region + '&p=4' + this.KEY);
+  }
+  getBreweries5() {
+    return this.http.get<BreweryResponse>(this.breweriesUrl + this.region + '&p=5' + this.KEY);
   }
 
   getBrewery(id: string) {

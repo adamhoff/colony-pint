@@ -16,7 +16,6 @@ export class BreweryDetailComponent implements OnInit {
   brewery: any[];
   beers: any[];
 
-
   constructor(
     private route: ActivatedRoute,
     private breweryService: BreweryService,

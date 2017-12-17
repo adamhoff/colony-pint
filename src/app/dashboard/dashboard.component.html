@@ -1,4 +1,11 @@
 <div class="grid grid-pad">
+  <div class="page_numbers">
+    <button (click)="getBreweries()">1</button>
+    <button (click)="getBreweries2()">2</button>
+    <button (click)="getBreweries3()">3</button>
+    <button (click)="getBreweries4()">4</button>
+    <button (click)="getBreweries5()">5</button>
+  </div>
   <a *ngFor="let brewery of breweries" class="col-1-4"
     routerLink="/detail/{{brewery.brewery.id}}">
     <div class="module brewery">
